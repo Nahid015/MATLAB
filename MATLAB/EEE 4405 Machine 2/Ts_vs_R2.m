@@ -1,0 +1,11 @@
+clc;
+clear all;
+close all;
+R2=0:.01:1.5;
+Ns=25;
+X2=0.7;
+E2=80;
+Ts=1.5*(1/(pi*Ns))*((E2.^2*R2)./(R2.^2+X2.^2));
+plot(R2,Ts);
+grid on;
+grid minor;
